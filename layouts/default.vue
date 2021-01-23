@@ -7,9 +7,24 @@
 
 <script lang="ts">
 import NavBar from '~/components/NavBar.vue'
+import '~/assets/index.scss'
 export default {
   components: {
     NavBar,
+  },
+  head() {
+    // <-- property used by vue-meta to add header tags
+    return {
+      titleTemplate: '%s - Real World Events', // <-- For our title tag
+      meta: [
+        {
+          hid: 'description',
+          name: 'description', // <-- for our meta description tag
+          content:
+            'Where you can find all the events taking place in your neighborhood',
+        },
+      ],
+    }
   },
 }
 </script>
