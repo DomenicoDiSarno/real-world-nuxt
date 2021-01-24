@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
+    "server": "json-server --watch db.json --port 8080 --delay 2000",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
